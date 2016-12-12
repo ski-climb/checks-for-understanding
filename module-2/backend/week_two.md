@@ -5,6 +5,8 @@ Fork this respository. Answer the questions to the best of your ability. Try to 
 Note: When you're done, submit a PR. 
 
 1. At a high level, what is ActiveRecord? What does it do/allow you to do?
+ * *ActiveRecord is the go-between from ruby to the database.  It allows us to query the database using ruby and ruby-like (ActiveRecord) methods.*
+ * *It also allows us to swap out what kind of database (e.g. Postgresql, MYSQL, etc...) we're using and not change our model or migration code, although I'm not sure what kind of changes would have to be made if we swapped to a non-relational database.*
 2. Assume you have the following model:
 
 ```ruby
