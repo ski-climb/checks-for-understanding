@@ -20,7 +20,7 @@ What are some methods you can call on `Team`? If these methods aren't defined in
 3. Assume that in your database, a team has the following attributes: "id", "name", owner_id". How would you find the name of a team with an id of 4? Assuming your class only included the code from question 2, how could you find the owner of the same team?
  * *`Team.find(4).name` would find the team's name*
  * *the id for the owner would be `the_owner_id = Team.find(4).owner_id` so the owner's name could be found then with:*
-  * *`Owner.find(the_owner_id).name` assuming there was an `Owner` table and class.*
+ * *`Owner.find(the_owner_id).name` assuming there was an `Owner` table and class.*
 
 4. Assume that you added a line to your `Team` class as follows:
 
@@ -48,6 +48,7 @@ end
 ```
 
  * *As far as the schema, the Student table would have an id, a foreign key called teacher_id, and most likely a name and maybe a school assignd student id.  The Teacher table would have an id and most likely a name.*
+
 8. Define foreign key, primary key, and schema.
  * *A foreign key is a column on a database table that points to another row's primary key (`teacher_id` is a foreign key in the above example).*
  * *A primary key is the unique identifier for a row within a database table.  It is often an integer, but only needs to be a column o unique values (think Social Security Numbers here).*
