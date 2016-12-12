@@ -46,6 +46,7 @@ class Teacher << ActiveRecord::Base
   has_many :students
 end
 ```
+
  * *As far as the schema, the Student table would have an id, a foreign key called teacher_id, and most likely a name and maybe a school assignd student id.  The Teacher table would have an id and most likely a name.*
 8. Define foreign key, primary key, and schema.
  * *A foreign key is a column on a database table that points to another row's primary key (`teacher_id` is a foreign key in the above example).*
