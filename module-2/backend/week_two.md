@@ -53,9 +53,9 @@ end
  * *A foreign key is a column on a database table that points to another row's primary key (`teacher_id` is a foreign key in the above example).*
  * *A primary key is the unique identifier for a row within a database table.  It is often an integer, but only needs to be a column o unique values (think Social Security Numbers here).*
 9. Describe the relationship between a foreign key on one table and a primary key on another table.
- * * A foreign key points ot a primary key.*
+ * *A foreign key points ot a primary key.*
 10. What are the parts of an HTTP response?
-* *The headers (things like the HTTP response code, say 200, what kind of response is coming back, maybe HTML, content-length in bytes, etc..) and the body (the actual HTML which was described in the headers).*
+ * *The headers (things like the HTTP response code, say 200, what kind of response is coming back, maybe HTML, content-length in bytes, etc..) and the body (the actual HTML which was described in the headers).*
 11. Describe some techniques to make our Sinatra code more DRY. Give an example of when you would use these techniques.
  * *When I think back to Bike Share, I think we could have saved a lot of time and effort if we had used partials to represent the input fields for the new and edit forms when we were doing the CRUD portions of the application.  Hmmm, and we probably should have used factories for creating test objects too.*
 
