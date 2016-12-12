@@ -15,9 +15,12 @@ end
 ```
 
 What are some methods you can call on `Team`? If these methods aren't defined in the class, how do you have access to them?
-  * *`Team.all, Team.find, .find_by, .count, .where, .pluck, .find_each, ...`*
+ * *`Team.all, Team.find, .find_by, .count, .where, .pluck, .find_each, ...`*
 
 3. Assume that in your database, a team has the following attributes: "id", "name", owner_id". How would you find the name of a team with an id of 4? Assuming your class only included the code from question 2, how could you find the owner of the same team?
+ * *`Team.find(4).name` would find the team's name*
+ * *the id for the owner would be `the_owner_id = Team.find(4).owner_id` so the owner's name could be found then with:*
+  * *`Owner.find(the_owner_id).name` assuming there was an `Owner` table and class.*
 
 4. Assume that you added a line to your `Team` class as follows:
 
@@ -28,6 +31,7 @@ end
 ```
 
 Now how would you find the owner of the team with an id of 4?
+ * *`owner_name = Team.find(4).owner.name`*
 
 3. What do they allow you to do?
 7. In a database that's holding students and teachers, what will be the relationship between students and teachers? Draw the schema diagram.
