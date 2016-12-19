@@ -47,4 +47,4 @@ Note: When you're done, submit a PR with a reflection in the comments about how 
 ```
 
 12. Why do we want to validate our models?
- * *Validations on the models are one way to ensure that useless information doesn't get saved to the database (like a horse without a name or comment without any content.*
+ * *Validations on the models are one way to ensure that useless or nonsensical information doesn't get saved to the database (like a horse without a name or comment without any content.*
