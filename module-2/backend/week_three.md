@@ -28,7 +28,7 @@ Note: When you're done, submit a PR with a reflection in the comments about how 
 9. What role does `form_for` play in helping us create our forms?
  * *form_for is a Rails helper method which generates much of the boilerplate HTML required to construct a form.   It's super handy because it allows us to DRY up our code by using partials to render the new and edit forms.*
 10. How does `form_for` know where to submit the user's input?
- * *It checks the object argument (e.g.* `form_for @horse`*) to see if it is a *`new_record?`* and then either generates the new form (to /horses) or the edit form (to /horses/:id).*
+ * *It checks the object argument (e.g.* `form_for @horse`*) to see if it is a* `new_record?` *and then either generates the new form (to /horses) or the edit form (to /horses/:id).*
 11. Create a form using a `form_for` helper to create a new `Horse`. 
 
 ```ruby
