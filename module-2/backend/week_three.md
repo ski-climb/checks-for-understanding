@@ -12,9 +12,9 @@ Note: When you're done, submit a PR with a reflection in the comments about how 
 1. What is the entry at the command line to create a new rails app?
  * *rails new my_app -d postgresql -T --skip-turbolinks --skip-spring*
 2. What do Models generally inherit from in rails?
- * *ActiveRecord::Base, like so: class Horses < ActiveRecord::Base < end*
+ * *ActiveRecord::Base, like so: class Horses < ActiveRecord::Base; end*
 3. What do Controllers generally inherit from in a rails project?
- * *ApplicaitonController, e.g. HorsesController < ApplicationController < end*
+ * *ApplicaitonController, e.g. HorsesController < ApplicationController; end*
 4. How would I create a route if I wanted to see a specific horse in my routes file assuming I'm sticking to standard conventions and that I didn't want other CRUD functionality?
  * *resources :horses, only: [:show]*
 5. What rake task is useful when looking at routes, and what information does it give you?
