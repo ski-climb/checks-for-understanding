@@ -24,7 +24,27 @@ Note: When you're done, submit a PR with a reflection in the comments about how 
 7. What's the difference between what `_url` and `_path` return when combined with a routes prefix?
  * *_url will return the full url, e.g. http://www.horseofcourse.com/horses and the _path is relative to root, so just /horses*
 8. What are strong params and why are the necessary?
+ * *Strong params are a security measure to ensure that users can only enter data via forms for the attributes that you want them to have access to.  This precaution makes sure users can't input data directly to the database (like trying to submit `admin=true` when creating a new user account).*
 9. What role does `form_for` play in helping us create our forms?
+ * *form_for is a Rails helper method which generates much of the boilerplate HTML required to construct a form.   It's super handy because it allows us to DRY up our code by using partials to render the new and edit forms.*
 10. How does `form_for` know where to submit the user's input?
+ * *It checks the object argument (e.g.* `form_for @horse`*) to see if it is a *`new_record?`* and then either generates the new form (to /horses) or the edit form (to /horses/:id).*
 11. Create a form using a `form_for` helper to create a new `Horse`. 
+
+```ruby
+<%= form_for @horse %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :owner %>
+  <%= f.text_field :owner %>
+
+  <%= f.label :color %>
+  <%= f.text_field :color %>
+
+  <%= f.submit %>
+<% end %>
+```
+
 12. Why do we want to validate our models?
+ * *Validations on the models are one way to ensure that useless information doesn't get saved to the database (like a horse without a name or comment without any content.*
