@@ -18,7 +18,7 @@ Note: When you're done, submit a PR with a reflection in the comments about how 
 4. How would I create a route if I wanted to see a specific horse in my routes file assuming I'm sticking to standard conventions and that I didn't want other CRUD functionality?
  * *resources :horses, only: [:show]*
 5. What rake task is useful when looking at routes, and what information does it give you?
- * `rake routes`
+ * `rake routes` *shows HTTP verb, the url, which controller and method to use for that route, and the path helper prefix.*
 6. What is an example of a route helper? When would you use them?
  * *e.g.* `horses_path`* we might use them in the specs or when creating a link, e.g. link_to "Horses", horses_path*
 7. What's the difference between what `_url` and `_path` return when combined with a routes prefix?
