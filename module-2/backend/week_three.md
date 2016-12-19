@@ -20,7 +20,7 @@ Note: When you're done, submit a PR with a reflection in the comments about how 
 5. What rake task is useful when looking at routes, and what information does it give you?
  * `rake routes` *shows HTTP verb, the url, which controller and method to use for that route, and the path helper prefix.*
 6. What is an example of a route helper? When would you use them?
- * *e.g.* `horses_path`* we might use them in the specs or when creating a link, e.g. link_to "Horses", horses_path*
+ * *e.g.* `horses_path` *we might use them in the specs or when creating a link, e.g. link_to "Horses", horses_path*
 7. What's the difference between what `_url` and `_path` return when combined with a routes prefix?
  * *_url will return the full url, e.g. http://www.horseofcourse.com/horses and the _path is relative to root, so just /horses*
 8. What are strong params and why are the necessary?
